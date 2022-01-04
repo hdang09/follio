@@ -1,0 +1,58 @@
+:root {
+    --primary-color: #fe3e57 !important;
+    --text-color: #666 !important;
+    --heading-black-color: #121127 !important;
+    --heading-blue-color: #131058 !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: Now-Bold;
+    src: url(../../fonts/Now-Bold.otf);
+}
+
+html {
+    position: relative;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-weight: 300;
+    /* font-family: 'Quicksand', sans-serif;    */
+    font-family: 'Quicksand', 'Helvetica', 'Arial' ,'Now-Bold', sans-serif;   
+
+}
+
+.flexible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    min-width: 175px;
+    height: 55px;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+}
+
+.btn a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    opacity: 0.8;
+    border: none;
+}
+
+.btn:hover a {
+    color: #fff;
+}

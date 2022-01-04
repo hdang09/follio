@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--[if IE]>
+    This browser is internet explorer (any version)
+    <![endif]-->
+
+    <!-- Icon linkage -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font linkage -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- My grid Library -->
+    <link rel="stylesheet" href="./assets/css/grid.css">
+
+    <!-- File CSS linkage -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <header id="wrapper" style="background: url(./img/wrapper/wrapper-bg.png) no-repeat right / contain" >
+        <div class="header">
+            <div class="grid wide flexible">
+                <img class="header__logo" src="./img/wrapper/header/follio-logo.png" alt="Follio Logo">
+                <input type="checkbox" hidden name="" id="header__nav-bar-mobile">
+
+                <div class="header__nav-bar">
+                    <ul class="header__nav-bar--list">
+                        <li class="header__nav-bar--item">
+                            <a class="header__nav-bar--link" href="#">Home</a>
+                            <ul class="header__nav-bar--subnav">
+                                <li class="header__subnav--item">
+                                    <a href="#" style="color: var(--primary-color); " class="header__subnav--item-link">Home</a> 
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Home-style-2</a>
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Home-style-3</a>
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Home-style-4</a>
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Home-style-5</a>
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Home-style-6</a>
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Home-style-7</a>
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Home-style-8</a>
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Home-style-9</a>
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Home-style-10</a> 
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-bar--item">
+                            <a class="header__nav-bar--link" href="#">About</a>
+                        </li>
+                        <li class="header__nav-bar--item nav-bar--portfolio">
+                            <a class="header__nav-bar--link" href="#">Portfolio</a>
+                            <ul class="header__nav-bar--subnav">
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Portfolio Grid</a> 
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Portfolio Grid-2</a>
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Portfolio Mashonary</a>
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Portfolio List</a>
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Portfolio Cro</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-bar--item nav-bar--pages">
+                            <a class="header__nav-bar--link" href="#">Pages</a>
+                            <ul class="header__nav-bar--subnav">
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">About</a> 
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Service Details</a>
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Project Details</a>
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">404 Page</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-bar--item nav-bar--blog">
+                            <a class="header__nav-bar--link" href="#">Blog</a>
+                            <ul class="header__nav-bar--subnav">
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Blog</a> 
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Blog Fullwidth</a>
+                                </li>
+                                <li class="header__subnav--item">
+                                    <a href="#" class="header__subnav--item-link">Blog Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-bar--item">
+                            <a class="header__nav-bar--link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__contact">
+                    <a class="header__contact--link" href="tel:+(888) 01234567">+(888) 01234567</a>
+                </div>
+
+                <label for="header__nav-bar-mobile" class="header__overlay"></label>
+                <label for="header__nav-bar-mobile" class="header__menu-icon fas fa-bars"></label>
+            </div>
+        </div>
+
+            <div class="main-interface">
+                <div class="grid wide">
+                    <div class="introduction">
+                        <h1 class="intro__heading">We are The Greatest Digital Agency</h1>
+                        <p class="intro__text">More than 10 years of creating digital solutions</p>
+                        <div class="intro__info">
+                            <button class="btn info--btn">
+                                <a class="info--btn-link" href="#">More About</a>
+                            </button>
+                            <button class="btn contact--btn">
+                                <a class="contact--btn-lnk" href="#">Contact Us</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div class="container__features">
+            <div class="grid wide">
+                <div class="row features-box">
+                    <div class="col l-6 m-12">
+                        <h1 class="features-box__title">We create the best product what you are looking for.</h1>
+                        <div class="circle-behind"></div>
+                    </div>
+
+                    <div class="col l-6 m-12">
+                        <p class="features-box__body--text">My name is John Smith. I am a web designer and developer.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                        <button class="btn">
+                            <a class="" href="#">More About</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container__services">
+            <div class="grid wide">
+                <h1 class="services--title">Services</h1>
+                <div class="row">
+                    <div class="col l-6 m-12 c-12 services-item">
+                        <div style="background: url(./img/container/services/items/item-1.png) no-repeat center / contain;" class="services-item__img-bg">
+                            <div style="background: url(./img/container/services/icons/001-lightbulb.png) no-repeat center / contain;" class="services-item__img-icon"></div>
+                        </div>
+                        <div class="services-item__body">
+                            <h1 class="services-item__body-title">Product Design</h1>
+                            <div class="services-item__body--text">consectetur adipiscing elit, eiusmod tempor incididunt labore.</div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12 services-item">
+                        <div style="background: url(./img/container/services/items/item-2.png) no-repeat center / contain;" class="services-item__img-bg">
+                            <div style="background: url(./img/container/services/icons/002-edit-file.png) no-repeat center / contain;" class="services-item__img-icon"></div>
+                        </div>
+                        <div class="services-item__body">
+                            <h1 class="services-item__body-title">Web Design</h1>
+                            <div class="services-item__body--text">consectetur adipiscing elit, eiusmod tempor incididunt labore.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l-6 m-12 c-12 services-item">
+                        <div style="background: url(./img/container/services/items/item-3.png) no-repeat center / contain;" class="services-item__img-bg">
+                            <div style="background: url(./img/container/services/icons/003-visualization.png) no-repeat center / contain;" class="services-item__img-icon"></div>
+                        </div>
+                        <div class="services-item__body">
+                            <h1 class="services-item__body-title">Visual Design</h1>
+                            <div class="services-item__body--text">consectetur adipiscing elit, eiusmod tempor incididunt labore.</div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12 services-item">
+                        <div style="background: url(./img/container/services/items/item-4.png) no-repeat center / contain;" class="services-item__img-bg">
+                            <div style="background: url(./img/container/services/icons/004-employee.png) no-repeat center / contain;" class="services-item__img-icon"></div>
+                        </div>
+                        <div class="services-item__body">
+                            <h1 class="services-item__body-title">Business Strategy</h1>
+                            <div class="services-item__body--text">consectetur adipiscing elit, eiusmod tempor incididunt labore.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container__portfolio">
+            <div class="grid wide">
+                <h1 class="portfolio--title">Portfolio</h1>
+                <div class="row">
+                    <div class="col l-6 m-6 c-12">
+                        <div class="portfolio-item">
+                            <img src="./img/container/portfolio/minimalism-white.jpg" alt="" class="portfolio-item__img">
+                            <h1 class="portfolio-item__title">Minimalism</h1>
+                            <p class="portfolio-item__text">Illustration . Art Direction</p>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="./img/container/portfolio/minimalism-blue.jpg" alt="" class="portfolio-item__img">
+                            <h1 class="portfolio-item__title">Minimalism</h1>
+                            <p class="portfolio-item__text">Illustration . Art Direction</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-6 m-6 c-12">
+                            <img src="./img/container/portfolio/minimalism-pink.jpg" alt="" class="portfolio-item__img">
+                        <div class="portfolio-item">
+                            <h1 class="portfolio-item__title">Minimalism</h1>
+                            <p class="portfolio-item__text">Illustration . Art Direction</p>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="./img/container/portfolio/minimalism-peru.jpg" alt="" class="portfolio-item__img">
+                            <h1 class="portfolio-item__title">Minimalism</h1>
+                            <p class="portfolio-item__text">Illustration . Art Direction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn portfolio--btn"><a href="">Load More</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container__testimonial">
+            <div class="grid wide">
+                <h1 style="text-align: left;" class="testimonial--title">Testimonial</h1>
+            </div>
+            <div class="grid wide">
+                <div class="testimonial-box">
+                    <p class="testimonial-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, ipsa consectetur! Eligendi soluta dicta, cum ipsum iste quibusdam voluptate aperiam libero accusamus maxime modi?</p>
+                    <p class="testimonial-box__name">JOHN HARRY</p>
+                    <p class="testimonial-box__desc">CEO of Moderntern Technology</p>
+                </div>
+                <!-- <div class="testimonial--scroll-btn">
+                    <button class="scroll-btn">
+                        <i class="fas fa-chevron-circle-left"></i>
+                    </button>
+                    <button class="scroll-btn">
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </button>
+                </div> -->
+            </div>
+
+
+            
+        </div>
+
+        <div class="containter__letstalk">
+            <div class="grid wide">
+                <h1 class="letstalk--title">Let's Talk</h1>
+                <div class="row">
+                    <div class="col l-o-1 l-6 m-12">
+                        <div class="card__modal">
+                            <h2 style="text-align: center;" class="modal--title">Get In Touch</h2>
+                            <div class="row">
+                                <div class="col l-6">
+                                    <input type="text" class="card--input" placeholder="Name">
+                                </div>
+                                <div class="col l-6">
+                                    <input type="text" class="card--input" placeholder="Lastname">
+                                </div>
+                            </div>
+                            <input type="email" class="card--input" placeholder="Email">
+                            <input type="text" class="card--input" placeholder="Subject">
+                            <input type="text" class="card--input" placeholder="Message">
+                            <button style="border-radius: 40px;" class="btn modal--send-btn"><a href="">Send Message</a></button>
+                        </div>
+                        
+                        
+                    </div>  
+
+                    <div class="col l-5">
+                        <div class="card__item">
+                            <h2 class="card--title">25 North Street, Dubai</h2>
+                            <div class="card--info">
+                                <div class="card--img">
+                                    <img src="./img/container/letstalk/address.png" alt="" class="card--img-icon">
+                                </div>
+                                <span class="card--text">Office Address</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card__item">
+                            <h2 class="card--title">info@edefytheme.com</h2>
+                            <div class="card--info">
+                                <div class="card--img">
+                                    <img src="./img/container/letstalk/address.png" alt="" class="card--img-icon">
+                                </div>
+                                <span class="card--text">Official Mail</span>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <h2 class="card--title">+91 256-987-239</h2>
+                            <div class="card--info">
+                                <div class="card--img">
+                                    <img src="./img/container/letstalk/address.png" alt="" class="card--img-icon">
+                                </div>
+                                <span class="card--text">Official Phone</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-info">
+            <div class="grid wide flexible">
+                <img class="footer-info__logo" src="./img/wrapper/header/follio-logo.png" alt="Follio Logo">
+                <div class="footer-info__nav-bar">
+                    <ul class="footer-info__nav-bar--list">
+                        <li class="footer-info__nav-bar--item">
+                            <a class="footer-info__nav-bar--link" href="#">About</a>
+                        </li>
+                        <li class="footer-info__nav-bar--item">
+                            <a class="footer-info__nav-bar--link" href="#">Portfolio</a>
+                        </li>
+                        <li class="footer-info__nav-bar--item">
+                            <a class="footer-info__nav-bar--link" href="#">Blog</a>
+                        </li>
+                        <li class="footer-info__nav-bar--item">
+                            <a class="footer-info__nav-bar--link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-info__social">
+                    <ul class="footer-info__social-list">
+                        <li class="social-list__item">
+                            <a href="" class="social-list__item-link">
+                                <i class="social-list__item-link-icon fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__item-link">
+                                <i class="social-list__item-link-icon fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__item-link">
+                                <i class="social-list__item-link-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p class="footer-copyright__text">© 2020 Follio. All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<!-- http://follio-react.wpocean.com/home3 -->
