@@ -108,7 +108,7 @@
 
 /* Mobile */
 @media (max-width: 46.1875em) {
-    #header {
+    .header {
         padding: 20px 15px;
     }
 
@@ -150,8 +150,25 @@
     }
 
     .modal--title,
-    .card--title,
     .modal--title {
         font-size: 2.4rem;
+    }
+    
+    .card--title {
+        font-size: 2rem;
+    }
+
+    .footer-info__nav-bar--link {
+        padding: 0 15px;
+    }
+
+    .social-list__item {
+        --diameter: 62px;
+        width: var(--diameter);
+        height: var(--diameter)
+    }
+
+    .social-list__item-link-icon {
+        font-size: 3rem;
     }
 }
