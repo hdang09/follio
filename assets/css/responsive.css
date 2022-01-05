@@ -112,8 +112,9 @@
 
 /* Mobile */
 @media (max-width: 46.1875em) {
-    #main {
-        /* margin: 0 15px; */
+    .main-interface,
+    #container .grid.wide {
+        padding: 0 15px;
     }
 
     .header {

@@ -26,6 +26,10 @@ html {
     font-family: 'Quicksand', 'Helvetica', 'Arial' ,'Now-Bold', sans-serif;   
 }
 
+#main {
+    overflow: hidden;
+}
+
 .flexible {
     display: flex;
     justify-content: space-between;
