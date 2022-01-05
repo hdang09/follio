@@ -7,6 +7,13 @@
 
 /* Tablet & Mobile */
 @media (max-width: 63.9375em) {
+    /* Define again */
+    .btn {
+        min-width: 135px;
+        height: 45px;
+    }
+
+    /* Wrapper */
     #wrapper {
         background-size: cover;
     }

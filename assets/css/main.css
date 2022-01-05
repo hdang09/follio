@@ -409,7 +409,8 @@ a.contact--btn-link {
 }
 
 .card__item {
-    width: 375px;
+    width: 100%;
+    max-width: 375px;
     height: 207px;
     padding: 33px 40px;
     border-radius: 5px;
