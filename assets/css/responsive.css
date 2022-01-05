@@ -67,6 +67,10 @@
         margin-bottom: 15px;
     }
 
+    .portfolio-item__title {
+        font-size: 3rem;
+    }
+
     .testimonial--scroll-btn {
         display: none;
     }
@@ -108,6 +112,10 @@
 
 /* Mobile */
 @media (max-width: 46.1875em) {
+    #main {
+        /* margin: 0 15px; */
+    }
+
     .header {
         padding: 20px 15px;
     }
