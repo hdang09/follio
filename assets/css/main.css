@@ -12,6 +12,7 @@
     z-index: 1;
     background-color: #fff;
     box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    display: flex;
 }
 
 .header__logo,
@@ -347,7 +348,7 @@ a.contact--btn-link {
 .testimonial-box__name {
     color: var(--heading-blue-color);
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
 }
 
@@ -375,6 +376,7 @@ a.contact--btn-link {
     font-size: 4rem;
     color: #131058;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .scroll-btn:first-child {
@@ -419,6 +421,11 @@ a.contact--btn-link {
     color: var(--heading-blue-color);
 }
 
+.modal--title {
+    font-size: 3rem;
+    text-align: center;
+}
+
 .card--input {
     display: block;
     height: 50px;
@@ -430,6 +437,11 @@ a.contact--btn-link {
     font-size: 1.8rem;
     color: var(--text-color);
     outline: transparent;
+}
+
+input[class="card--input"] {
+    display: flex;
+    align-items: flex-end;
 }
 
 input[placeholder="Message"] {

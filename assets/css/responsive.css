@@ -1,5 +1,16 @@
+/* PC low resolution */
+@media (min-width: 64em) and (max-width: 77.4375em) {
+    .header__nav-bar--link {
+        padding: 0 20px;
+    }
+}
+
 /* Tablet & Mobile */
 @media (max-width: 63.9375em) {
+    #wrapper {
+        background-size: cover;
+    }
+    
     .footer-info .flexible {
         flex-direction: column;
     }
@@ -47,8 +58,12 @@
         transform: translateX(0);
     }
 
-    .services-item {
-        flex-direction: column;
+    .features-box__title {
+        margin-bottom: 15px;
+    }
+
+    .testimonial--scroll-btn {
+        display: none;
     }
 
     .card__modal {
@@ -60,6 +75,8 @@
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
     .intro__heading {
         font-size: 4.6rem;
+        line-height: 6.8rem;
+        margin-bottom: 25px;
     }
     
     .header__nav-bar {
@@ -69,21 +86,70 @@
     .header__contact--link {
         font-size: 1.8rem;
     }
+
+    .features-box__title {
+        font-size: 5.5rem;
+        line-height: 8rem;
+    }
+
+    .services--title,
+    .portfolio--title,
+    .testimonial--title,
+    .letstalk--title {
+        font-size: 4.5rem;
+        margin-bottom: 70px;
+    }
 }
 
 /* Mobile */
 @media (max-width: 46.1875em) {
+    #header {
+        padding: 20px 15px;
+    }
+
     .intro__heading {
         font-size: 3rem;
         -webkit-line-clamp: 2;
+        line-height: 4rem;
     }
 
     .header__nav-bar {
         min-width: 55vw;
     }
 
-
     .header__contact--link {
         display: none;
     }
+
+    .features-box__title,
+    .services--title,
+    .portfolio--title,
+    .testimonial--title,
+    .letstalk--title {
+        font-size: 3rem;
+        line-height: 5rem;
+        margin-bottom: 40px;
+    }
+
+    .services-item {
+        flex-direction: column;
+    }
+
+    .testimonial-box {
+        padding: 30px 15px 60px;
+    }
+
+    .testimonial-box__text {
+        font-size: 1.8rem;
+        line-height: 4rem;
+    }
+
+    .modal--title,
+    .card--title {
+        font-size: 2.4rem;
+    }
+
+    .modal--title {
+        font-size: 3rem;
+}
 }
