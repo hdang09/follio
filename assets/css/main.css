@@ -378,8 +378,9 @@ a.info--btn-link {
 
 .scroll-btn {
     border: none;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #131058;
+    opacity: 0.7;
     background-color: transparent;
     cursor: pointer;
 }
@@ -388,7 +389,9 @@ a.info--btn-link {
     margin-bottom: 30px;
 }
 
-
+.scroll-btn:hover {
+    opacity: 1;
+}
 /* Let's Talk */
 
 .card__modal {
