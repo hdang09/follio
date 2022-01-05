@@ -156,7 +156,7 @@ a.info--btn-link {
     color: #000;
 }
 
-a.contact--btn-link {
+.contact--btn-link {
  
 }
 
@@ -213,12 +213,13 @@ a.contact--btn-link {
 }
 
 .circle-behind {
+    --diameter: 330px;
     position: absolute;
     top: 0;
     left: 0;
     transform: translateX(-50%);
-    width: 330px;
-    height: 330px;
+    width: var(--diameter);
+    height: var(--diameter);
     border-radius: 50%;
     background-color: var(--primary-color);
     opacity: 0.05;
@@ -248,9 +249,10 @@ a.contact--btn-link {
 .portfolio--title,
 .testimonial--title,
 .letstalk--title {
+    --text-size: 7rem;
     font-family: 'Now-Bold';
-    font-size: 7rem;
-    line-height: 7rem;
+    font-size: var(--text-size);
+    line-height: var(--text-size);
     color: var(--heading-blue-color);
     text-align: center;
     margin-bottom: 100px;
@@ -270,9 +272,10 @@ a.contact--btn-link {
 }
 
 .services-item__img-icon {
+    --icon-size: 60px;
     margin-left: 20px;
-    width: 60px;
-    height: 60px;
+    width: var(--icon-size);
+    height: var(--icon-size);
 }
 
 .services-item__body {
@@ -316,8 +319,6 @@ a.contact--btn-link {
 
 /* Testimonial */
 .container__testimonial {
-    /* display: flex; */
-    /* position: relative; */
 }
 
 .testimonial {
@@ -326,7 +327,6 @@ a.contact--btn-link {
 
 .container__testimonial .grid.wide {
     position: relative;
-    /* overflow-x: auto; */
 }
 
 .testimonial-box {
@@ -469,8 +469,9 @@ input[placeholder="Message"] {
 }
 
 .card--img {
-    width: 90px;
-    height: 90px;
+    --img-size: 90px;
+    width: var(--img-size);
+    height: var(--img-size);
     border-radius: 50%;
     box-shadow: 0 10px 40px 0 rgb(50 50 50 / 10%);
     display: flex;
@@ -531,8 +532,9 @@ input[placeholder="Message"] {
 }
 
 .social-list__item {
-    width: 80px;
-    height: 80px;
+    --diameter: 80px;
+    width: var(--diameter);
+    height: var(--diameter);
     border-radius: 50%;
     margin-right: 20px;
     border: 1px solid #3840a9;
