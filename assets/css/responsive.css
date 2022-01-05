@@ -67,8 +67,13 @@
         margin-bottom: 15px;
     }
 
+    .portfolio-item__img {
+        margin-bottom: 30px;
+    }
+
     .portfolio-item__title {
         font-size: 3rem;
+        line-height: initial;
     }
 
     .testimonial--scroll-btn {
@@ -178,6 +183,10 @@
     }
 
     .social-list__item-link-icon {
+        font-size: 3rem;
+    }
+
+    .scroll-to-top {
         font-size: 3rem;
     }
 }

@@ -1,6 +1,7 @@
 /* Wrapper */
 #wrapper {
     height: 900px;
+    background-size: contain;
 }
 
 /* Header */
@@ -154,6 +155,7 @@
 
 a.info--btn-link {
     color: #000;
+    font-weight: 600;
 }
 
 .contact--btn-link {
@@ -396,7 +398,7 @@ a.info--btn-link {
 
 .card__modal {
     width: 100%;
-    max-width: 570px;
+    /* max-width: 570px; */
     height: 675px;
     padding: 30px;
     box-shadow: 0 5px 15px 0 rgb(68 68 68 / 10%);
@@ -572,7 +574,6 @@ input[placeholder="Message"] {
     -webkit-text-fill-color: transparent;
 }
 
-
 .footer-copyright {
     width: 100%;
     background-color: #eeecec;
@@ -583,4 +584,20 @@ input[placeholder="Message"] {
     text-align: center;
     font-weight: 500;
     font-size: 1.6rem;
+}
+
+/* Scroll back to top button */
+.scroll-to-top {
+    color: var(--primary-color);
+    opacity: 0.8;
+    font-size: 4.5rem;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
+    cursor: pointer;
 }
