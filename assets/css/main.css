@@ -445,9 +445,11 @@ a.info--btn-link {
     padding: 10px;
     border-bottom: 1px solid #eee;
     margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--text-color);
     outline: transparent;
+    font-family: 'Arial';
+    font-weight: 300;
 }
 
 input[class="card--input"] {
@@ -455,7 +457,7 @@ input[class="card--input"] {
     align-items: flex-end;
 }
 
-input[placeholder="Message"] {
+textarea[placeholder="Message"] {
     position: relative;
     top: 0;
     height: 175px;

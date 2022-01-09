@@ -295,16 +295,17 @@
                                 <h2 class="modal--title">Get In Touch</h2>
                                 <div class="row">
                                     <div class="col l-6 m-12 c-12">
-                                        <input type="text" class="card--input" placeholder="Name">
+                                        <input type="text" name="name" class="card--input" placeholder="Name">
                                     </div>
                                     <div class="col l-6 m-12 c-12">
-                                        <input type="text" class="card--input" placeholder="Lastname">
+                                        <input type="text" name="lastname" class="card--input" placeholder="Lastname">
                                     </div>
                                 </div>
-                                <input type="email" class="card--input" placeholder="Email">
-                                <input type="text" class="card--input" placeholder="Subject">
-                                <input type="text" class="card--input" placeholder="Message">
-                                <button style="border-radius: 40px;" class="btn modal--send-btn"><a href="">Send Message</a></button>
+                                <input type="email" name="email" class="card--input" placeholder="Email">
+                                <input type="text" name="subject" class="card--input" placeholder="Subject">
+                                <!-- <input type="text" class="card--input" placeholder="Message"> -->
+                                <textarea name="message" class="card--input" placeholder="Message" ></textarea>
+                                <button type="submit" style="border-radius: 40px;" class="btn modal--send-btn"><a href="">Send Message</a></button>
                             </div>
                             
                             
@@ -398,4 +399,6 @@
 </body>
 </html>
 
-<!-- http://follio-react.wpocean.com/home3 -->
+<!-- 
+    http://follio-react.wpocean.com/home3 
+-->
