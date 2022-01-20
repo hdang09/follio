@@ -45,6 +45,7 @@
     line-height: 8.5rem;
     font-weight: 600;
     padding: 0 30px;
+    transition: color linear 0.25s;
 }
 
 .header__nav-bar--subnav {
@@ -104,7 +105,7 @@
 }
 
 .header__menu-icon {
-    font-size: 2.6rem;
+    font-size: 3rem;
     margin-left: 10px;
     color: #000;
     cursor: pointer;

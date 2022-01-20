@@ -98,7 +98,8 @@
     }
 
     .header__contact--link {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        font-weight: 500;
     }
 
     .features-box__title {
