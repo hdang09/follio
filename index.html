@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Follio</title>
+    <title>Follio - Multipurpose Portfolio React Template</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <!--[if IE]>
     This browser is internet explorer (any version)
     <![endif]-->
 
-    <!-- Icon linkage -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Font linkage -->
+    <!-- Font: Quicksand -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- My grid Library -->
+    <!-- Grid CSS Library -->
     <link rel="stylesheet" href="./assets/css/grid.css">
 
-    <!-- File CSS linkage -->
+    <!-- CSS Files -->
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -39,7 +39,10 @@
                     <div class="header__nav-bar">
                         <ul class="header__nav-bar--list">
                             <li class="header__nav-bar--item">
-                                <a class="header__nav-bar--link" href="https://hdang09.github.io/follio-2/">Home</a>
+                                <a style="color: var(--primary-color)" class="header__nav-bar--link" href="https://hdang09.github.io/follio-2/">
+                                    Home
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
                                 <ul class="header__nav-bar--subnav">
                                     <li class="header__subnav--item">
                                         <a href="#" style="color: var(--primary-color); " class="header__subnav--item-link">Home</a> 
@@ -77,7 +80,9 @@
                                 <a class="header__nav-bar--link" href="#">About</a>
                             </li>
                             <li class="header__nav-bar--item nav-bar--portfolio">
-                                <a class="header__nav-bar--link" href="#">Portfolio</a>
+                                <a class="header__nav-bar--link" href="#">Portfolio
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
                                 <ul class="header__nav-bar--subnav">
                                     <li class="header__subnav--item">
                                         <a href="#" class="header__subnav--item-link">Portfolio Grid</a> 
@@ -97,7 +102,10 @@
                                 </ul>
                             </li>
                             <li class="header__nav-bar--item nav-bar--pages">
-                                <a class="header__nav-bar--link" href="#">Pages</a>
+                                <a class="header__nav-bar--link" href="#">
+                                    Pages
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
                                 <ul class="header__nav-bar--subnav">
                                     <li class="header__subnav--item">
                                         <a href="#" class="header__subnav--item-link">About</a> 
@@ -114,7 +122,10 @@
                                 </ul>
                             </li>
                             <li class="header__nav-bar--item nav-bar--blog">
-                                <a class="header__nav-bar--link" href="#">Blog</a>
+                                <a class="header__nav-bar--link" href="#">
+                                    Blog
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
                                 <ul class="header__nav-bar--subnav">
                                     <li class="header__subnav--item">
                                         <a href="#" class="header__subnav--item-link">Blog</a> 
@@ -293,19 +304,21 @@
                         <div class="col l-o-1 l-6 m-12 c-12">
                             <div class="card__modal">
                                 <h2 class="modal--title">Get In Touch</h2>
-                                <div class="row">
-                                    <div class="col l-6 m-12 c-12">
-                                        <input type="text" name="name" class="card--input" placeholder="Name">
+                                <form>
+                                    <div class="row">
+                                        <div class="col l-6 m-12 c-12">
+                                            <input type="text" name="name" class="card--input" placeholder="Name" required>
+                                        </div>
+                                        <div class="col l-6 m-12 c-12">
+                                            <input type="text" name="lastname" class="card--input" placeholder="Lastname" required>
+                                        </div>
                                     </div>
-                                    <div class="col l-6 m-12 c-12">
-                                        <input type="text" name="lastname" class="card--input" placeholder="Lastname">
-                                    </div>
-                                </div>
-                                <input type="email" name="email" class="card--input" placeholder="Email">
-                                <input type="text" name="subject" class="card--input" placeholder="Subject">
-                                <!-- <input type="text" class="card--input" placeholder="Message"> -->
-                                <textarea name="message" class="card--input" placeholder="Message" ></textarea>
-                                <button type="submit" style="border-radius: 40px;" class="btn modal--send-btn"><a href="">Send Message</a></button>
+                                    <input type="email" name="email" class="card--input" placeholder="Email" required>
+                                    <input type="text" name="subject" class="card--input" placeholder="Subject" required>
+                                    <!-- <input type="text" class="card--input" placeholder="Message"> -->
+                                    <textarea name="message" class="card--input" placeholder="Message" ></textarea>
+                                    <input type="submit" style="border-radius: 40px;" class="btn modal--send-btn" value="Send Message"></input>
+                                </form>
                             </div>
                             
                             
@@ -394,9 +407,13 @@
             </div>
         </footer>
 
-        <buuton class="scroll-to-top fas fa-arrow-circle-up"></buuton>
+        <button class="scroll-to-top fas fa-arrow-up"></button>
     </div>
 </body>
+
+<script>
+    console.log('Em khum biết sử dụng Javascript :v')
+</script>
 </html>
 
 <!-- 

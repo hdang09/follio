@@ -22,7 +22,6 @@
 
 .header__nav-bar,
 .footer-info__nav-bar {
-
 }
 
 .header__nav-bar--list,
@@ -44,8 +43,13 @@
     font-size: 1.5rem;
     line-height: 8.5rem;
     font-weight: 600;
-    padding: 0 30px;
+    padding: 0 20px;
     transition: color linear 0.25s;
+    font-family: 'Now-Regular', 'Quicksand', 'Helvetica', 'Arial', sans-serif;
+}
+
+.header__nav-bar--link i {
+    display: none;
 }
 
 .header__nav-bar--subnav {
@@ -54,6 +58,7 @@
     box-shadow: 0 0 20px rgb(0 0 0 / 8%);
     z-index: 1;
     display: none;
+    animation: fadeIn ease-in-out 0.5s;
 }
 
 .header__nav-bar--item:hover .header__nav-bar--subnav {
@@ -71,13 +76,11 @@
     text-decoration: none;
     color: var(--text-color);
     background-color: #fff;
-    /* opacity: 0; */
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
 }
 
 .header__nav-bar--link:hover,
-.header__subnav--item-link:hover {
+.header__subnav--item-link:hover,
+.footer-info__nav-bar--link:hover {
     color: var(--primary-color);
 }
 
@@ -91,7 +94,8 @@
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 400;
-    border-bottom: 0.5px solid var(--primary-color);
+    border-bottom: 0.1px solid var(--primary-color);
+    font-family: 'Now-Regular', sans-serif;
 }
 
 .header__overlay {
@@ -287,7 +291,7 @@ a.info--btn-link {
 
 .services-item__body-title,
 .portfolio-item__title {
-    /* width: 170px; */
+    width: 170px;
     font-family: 'Now-Bold';
     font-size: 4rem;
     line-height: 5.5rem;
@@ -469,6 +473,8 @@ textarea[placeholder="Message"] {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    color: #fff;
+    font-size: 1.6rem;
 }
 
 .card--info {
@@ -591,9 +597,14 @@ textarea[placeholder="Message"] {
 
 /* Scroll back to top button */
 .scroll-to-top {
-    color: var(--primary-color);
-    opacity: 0.8;
-    font-size: 4.5rem;
+    --radius: 45px;
+    width: var(--radius);
+    height: var(--radius);
+    border: 2px solid var(--primary-color);
+    background: rgba(254, 62, 87, 0.7);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2rem;
     position: fixed;
     bottom: 25px;
     right: 25px;

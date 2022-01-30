@@ -34,6 +34,7 @@
         padding-top: 30px;
         transform: translateX(-100%);
         transition: transform linear 0.25s;
+        width: 280px;
     }
 
     .header__nav-bar--list {
@@ -45,6 +46,13 @@
         color: #fff;
         line-height: 5.6rem;
         padding: 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__nav-bar--link i {
+        display: block;
     }
 
     .header__contact {
@@ -92,10 +100,6 @@
         line-height: 6.8rem;
         margin-bottom: 25px;
     }
-    
-    .header__nav-bar {
-        min-width: 35vw;
-    }
 
     .header__contact--link {
         font-size: 2rem;
@@ -133,10 +137,6 @@
         line-height: 4rem;
     }
 
-    .header__nav-bar {
-        min-width: 55vw;
-    }
-
     .header__contact--link {
         display: none;
     }
@@ -149,10 +149,6 @@
         font-size: 3rem;
         line-height: 5rem;
         margin-bottom: 40px;
-    }
-
-    .services-item {
-        flex-direction: column;
     }
 
     .testimonial-box {
@@ -188,6 +184,17 @@
     }
 
     .scroll-to-top {
-        font-size: 3rem;
+        --radius: 30px;
+        font-size: 1.6rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 36.875em) {
+    .header__nav-bar {
+        width: 250px;
+    }
+    .services-item {
+        flex-direction: column;
     }
 }

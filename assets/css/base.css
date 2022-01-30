@@ -12,9 +12,23 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color); 
+}
+
 @font-face {
     font-family: Now-Bold;
-    src: url(../../fonts/Now-Bold.otf);
+    src: url(../../fonts/Now/Now-Bold.otf);
+}
+
+@font-face {
+    font-family: Now-Regular;
+    src: url(../../fonts/Now/Now-Regular.otf);
 }
 
 html {
@@ -24,7 +38,7 @@ html {
     box-sizing: border-box;
     font-weight: 300;
     /* font-family: 'Quicksand', sans-serif;    */
-    font-family: 'Quicksand', 'Helvetica', 'Arial' ,'Now-Bold', sans-serif;   
+    font-family: 'Quicksand', 'Helvetica', 'Arial', 'Now-Regular' ,'Now-Bold', sans-serif;   
 }
 
 #main {
@@ -43,6 +57,11 @@ html {
     background-color: var(--primary-color);
     border: none;
     cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn::before {
+
 }
 
 .btn a {
@@ -60,4 +79,14 @@ html {
 
 .btn:hover a {
     color: #fff;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
