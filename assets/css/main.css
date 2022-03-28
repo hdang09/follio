@@ -442,14 +442,29 @@ a.info--btn-link {
     text-align: center;
 }
 
+.card-group {
+    margin-bottom: 20px;
+}
+
+.card-group.invalid .card--input {
+    border-bottom: 1px solid red;
+    color: red;
+}
+
+.card-group.invalid .card--message {
+    color: red;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
 .card--input {
     display: block;
     height: 50px;
     width: 100%;
     border: none;
-    padding: 10px;
+    margin: 10px;
     border-bottom: 1px solid #eee;
-    margin-bottom: 20px;
     font-size: 1.6rem;
     color: var(--text-color);
     outline: transparent;
